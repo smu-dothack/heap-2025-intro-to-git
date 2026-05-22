@@ -29,3 +29,5 @@ Your submission will be evaluated automatically by a GitHub Action. The action w
 **Reminder**: Ensure that your commit messages are clear and descriptive.
 
 If the GitHub Action passes, you have successfully completed the assignment :D
+
+**Done**
