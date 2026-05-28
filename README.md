@@ -13,8 +13,35 @@ To successfully complete this lab, please follow these steps:
 3. Merge your branch: Merge your branch into the main branch.
 
 4. Push your changes: Push your branch to the remote repository.
-
+	- Example: `git push -u origin your-name`.
+	- If you merge locally instead of via a PR, push `main` after merging (see examples below).
 5. Submit a Pull Request: Submit a Pull Request to merge your branch into the main branch.
+
+### Notes
+
+- Preferred workflow: create a Pull Request on GitHub and merge there — this ensures the merge is recorded and the repository's checks run on the merged history.
+- If you merge locally, prefer creating a merge commit so the action can detect the merge (for example, `git merge --no-ff your-name`).
+
+### Example commands
+
+```bash
+# create a branch
+git checkout -b your-name
+
+# make changes, then commit
+git add .
+git commit -m "Add: short description of change"
+
+# push branch and set upstream
+git push -u origin your-name
+
+# Option A: create a PR on GitHub and merge via the web UI
+
+# Option B: merge locally and push main
+git checkout main
+git merge --no-ff your-name
+git push origin main
+```
 
 ## Evaluation
 
